@@ -1,9 +1,9 @@
 # Shotgun Developer Day 2018 Resources
 
 ## What is Shotgun Developer Day?
-A day of classes on how to develop for Shotgun. Come and learn how to use 
-Shotgun’s advanced features to automate common tasks and make tool development 
-easier. The day will be setup as a series of classes:
+A day of classes for people interested in developing custom solutions with Shotgun.
+Attendees will learn how to use Shotgun’s advanced features to automate common tasks and
+make tool development easier.
 
 ## What is this repository?
 This repository contains all resources presented at the Shotgun Developer Day 
@@ -19,7 +19,7 @@ at SIGGRAPH 2018. This includes all of the following:
 **Description**: An introduction to Shotgun development and the various APIs and integrations 
 that are available.
 
-**What will attendees know after this session?**
+**What you will learn from this session:**
 * what APIs and integrations are available on the Shotgun Platform
 * which technology is right for a given production scenario
 * how to query/find data using Shotgun's filter syntax
@@ -32,7 +32,7 @@ allow for basic software launching and file sharing, but their true power is
 unleashed once you take control of the configuration and provide a custom 
 directory structure and hooks to automate more of the data flow in your studio.
 
-**What will attendees know after this session?**
+**What you will learn from this session:**
 * how Shotgun Desktop works and what is available via the basic pipeline integrations
 * how to take over a configuration and customize app UIs and configuration settings 
 * how to take over and customize hooks and actions
@@ -41,7 +41,7 @@ directory structure and hooks to automate more of the data flow in your studio.
 **Description**: Learn how to control how our integrations behave and harness the power of our 
 Toolkit platform to make building a pipeline easier.
 
-**What will attendees know after this session?**
+**What you will learn from this session:**
 * how to develop, package up, and distribute toolkit configurations to a remote user base
 * how to develop and distribute custom toolkit apps 
 * how to leverage the standard toolkit frameworks for UI and data management
