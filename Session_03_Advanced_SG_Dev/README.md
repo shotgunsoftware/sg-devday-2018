@@ -1,7 +1,8 @@
 ### Session Summary
-Learn how to control how our integrations behave and harness the power of our Toolkit platform to make building a pipeline easier. 
+Learn how to control how our integrations behave and harness the power 
+of our Toolkit platform to make building a pipeline easier. 
 
-**What will attendees know after this session?**
+**What will you know after having attended this session?**
 
 - How to develop, package up, and distribute toolkit configurations to a remote user base
 - How to develop and distribute custom toolkit apps 
