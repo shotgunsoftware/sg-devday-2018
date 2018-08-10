@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+
+    <!-- The Viewer JS -->
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js"></script>
+
+    <!-- The Viewer CSS -->
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css" type="text/css">
+
+    <!-- Developer CSS -->
+    <style>
+        body {
+            margin: 0;
+        }
+        #MyViewerDiv {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #F0F8FF;
+        }
+    </style>
+  </head>
+  <script>
+
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
+
+      /**
+       * Autodesk.Viewing.Document.load() success callback.
+       * Proceeds with model initialization.
+       */
+      function onDocumentLoadSuccess(doc) {
+
+        // A document contains references to 3D and 2D viewables.
+        var viewables = Autodesk.Viewing.Document.getSubItemsWithProperties(doc.getRootItem(), {'type':'geometry'}, true);
+        if (viewables.length === 0) {
+            console.error('Document contains no viewables.');
+            return;
+        }
+
+        // Choose any of the avialble viewables
+        var initialViewable = viewables[0];
+        var svfUrl = doc.getViewablePath(initialViewable);
+        var modelOptions = {
+            sharedPropertyDbPath: doc.getPropertyDbPath()
+        };
+
+        var viewerDiv = document.getElementById('MyViewerDiv');
+        viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
+        viewer.start(svfUrl, modelOptions, onLoadModelSuccess, onLoadModelError);
+      }
+
+      /**
+       * Autodesk.Viewing.Document.load() failuire callback.
+       */
+      function onDocumentLoadFailure(viewerErrorCode) {
+        console.error('onDocumentLoadFailure() - errorCode:' + viewerErrorCode);
+      }
+
+      /**
+       * viewer.loadModel() success callback.
+       * Invoked after the model's SVF has been initially loaded.
+       * It may trigger before any geometry has been downloaded and displayed on-screen.
+      */
+      function onLoadModelSuccess(model) {
+        console.log('onLoadModelSuccess()!');
+        console.log('Validate model loaded: ' + (viewer.model === model));
+        console.log(model);
+      }
+
+      /**
+       * viewer.loadModel() failure callback.
+       * Invoked when there's an error fetching the SVF file.
+       */
+      function onLoadModelError(viewerErrorCode) {
+        console.error('onLoadModelError() - errorCode:' + viewerErrorCode);
+      }
+
+
+  </script>
+  <body>
+      <!-- The Viewer will be instantiated here -->
+      <div id="MyViewerDiv"></div>
+
+      <script>
+          var viewer;
+          var options = {
+            env: 'AutodeskProduction',
+            getAccessToken: function(onGetAccessToken) {
+                // get the forge access token from the local test server
+                // NOTE: there is a lack of proper authentication here. You'll
+                // need to consider where and how you might run code like this.
+                // You should never expose access tokens on a non secure
+                // connection or on a non-private network.
+                var expireTimeSeconds = 86400;
+                var local_test_server = "https://localhost:4443/token";
+                var request = new XMLHttpRequest();
+                request.open('GET', local_test_server, true);
+                request.send();
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4 && request.status === 200) {
+                        onGetAccessToken(request.responseText, expireTimeSeconds);
+                    }
+                }
+            }
+          };
+          var documentId = 'urn:' + getUrlParameter("forge_urn");
+          Autodesk.Viewing.Initializer(options, function onInitialized(){
+              Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
+          });
+      </script>
+   </body>
+</html>
