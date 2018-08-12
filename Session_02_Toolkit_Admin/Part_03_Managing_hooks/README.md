@@ -22,7 +22,7 @@ talk contains:
 
 ## Resources
 
-* [An Overview of Toolkis: Hooks](https://support.shotgunsoftware.com/hc/en-us/articles/219040648-An-overview-of-Toolkit#Hooks)
+* [An Overview of Toolkit: Hooks](https://support.shotgunsoftware.com/hc/en-us/articles/219040648-An-overview-of-Toolkit#Hooks)
 * [Administering Toolkit: Hooks](https://support.shotgunsoftware.com/hc/en-us/articles/219033178-Administering-Toolkit#Hooks)
 * [Developer Docs: Hooks](https://developer.shotgunsoftware.com/tk-core/core.html#hooks)
 * [Shotgun Toolkit Webinar: Customizing Publish Workflows - A Live Demo](https://www.youtube.com/watch?v=pH4mylrnktY)
