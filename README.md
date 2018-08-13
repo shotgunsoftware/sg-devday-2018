@@ -9,9 +9,9 @@ make tool development easier.
 This repository contains all resources presented at the Shotgun Developer Day 
 at SIGGRAPH 2018. This includes all of the following:
 
-* presentations from each session as keynote files and PDFs
-* code and configuration samples as used in each presentation
-* links to videos and documentation relevant to each presentation
+* Presentations from each session as PDFs
+* Code and configuration samples as used in each presentation
+* Links to videos and documentation relevant to each presentation
 
 ## Sessions
 
