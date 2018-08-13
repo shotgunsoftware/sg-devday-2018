@@ -1,13 +1,31 @@
+# Introduction to Shotgun APIs
 
-NOTES:
-* This is your workspace. Add all materials for your section here
-* Should only be one person working here (whoever is presenting this part)
-* Please commit/push your changes to keep everyone up-to-date with what you're doing
+An introduction to the various APIs that are available to Shotgun developers. 
 
-TODO:
-* Replace these notes with an overview and outline of what is covered in this part of the session. Anyone coming to these resources should be able to quickly understand what is covered in the deck/pdf/notes/docs
-* Include any links to documentation, videos, or other supporting content in this README
-* Use the outline on the internal wiki for a starting point
-* Use the keynote template in the `templates` folder of this repository to begin fleshing out your presentation 
-* When keynote deck is complete for this part, convert to PDF and add to the repo
-* Please let Josh/Manne know if you have any questions
+## Contents
+
+* **data_management.pdf**: The full deck for this session as presented at 
+  dev day in pdf form.
+
+* **ami_demo.py**: An example web service for handling AMI executions
+
+* **example_ami_structure.py**: A Flask request object's form converted to a 
+  dict to help show the AMI data structure
+  
+* **version_create_demo.py**: A python API example that:
+  * Connects to a Shotgun site via script key
+  * Finds entities using simple and compound filters
+  * Create a **Version** entry linked to the found entities
+  * Update the status on the created Version
+  * Upload media to be associated with the Version
+
+## Resources
+
+* [Shotgun Developer site](http://developer.shotgunsoftware.com/)
+* [Python API Github repo](https://github.com/shotgunsoftware/python-api)
+* [Python API Docs](http://developer.shotgunsoftware.com/python-api/)
+* [Rest API Docs](http://developer.shotgunsoftware.com/rest-api/)
+* [Rest API Webinar](https://youtu.be/3xPPj2pbHVQ)
+* [Shotgun Event Daemon Git Repo](https://github.com/shotgunsoftware/shotgunEvents)
+* [Shotgun Event Daemon docs](https://github.com/shotgunsoftware/shotgunEvents/wiki)
+* [AMI Doc](https://support.shotgunsoftware.com/hc/en-us/articles/219031318-Creating-custom-Action-Menu-Items)

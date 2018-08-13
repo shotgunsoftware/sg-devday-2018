@@ -21,8 +21,9 @@ class ForgeModelRequestServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
         if self.path == "/token":
             # NOTE: there is a lack of proper authentication here. You'll need
             # to consider where and how you might run code like this. You should
-            # never # expose access tokens on a non secure connection or on a
-            # non-private # network.
+            # never expose access tokens on a non secure connection or on a
+            # non-private network. This is purely for demo purposes and should
+            # not be considered ready for production
             self.send_response(200)
             self.end_headers()
             self.wfile.write(self._get_forge_token())
