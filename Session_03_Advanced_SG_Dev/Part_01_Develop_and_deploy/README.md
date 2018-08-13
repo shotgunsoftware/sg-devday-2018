@@ -6,7 +6,7 @@
 
 # Presentation Content
 
-You can find the presentation content [here](toolkit_deploy.pdf) in pdf form.
+You can find the presentation content [here](https://github.com/shotgunsoftware/sg-devday-2018/raw/master/Session_03_Advanced_SG_Dev/Part_01_Develop_and_deploy/cloud_deploy.pdf) in pdf form.
 
 # Useful Links and Resources
 
