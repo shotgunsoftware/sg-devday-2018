@@ -1,13 +1,17 @@
+# About this session
 
-NOTES:
-* This is your workspace. Add all materials for your section here
-* Should only be one person working here (whoever is presenting this part)
-* Please commit/push your changes to keep everyone up-to-date with what you're doing
+**Title:** Distributed Toolkit Configurations.
+ 
+**What you will learn in this session:** How to develop, package up, and distribute Toolkit configurations to a remote user base.
 
-TODO:
-* Replace these notes with an overview and outline of what is covered in this part of the session. Anyone coming to these resources should be able to quickly understand what is covered in the deck/pdf/notes/docs
-* Include any links to documentation, videos, or other supporting content in this README
-* Use the outline on the internal wiki for a starting point
-* Use the keynote template in the `templates` folder of this repository to begin fleshing out your presentation 
-* When keynote deck is complete for this part, convert to PDF and add to the repo
-* Please let Josh/Manne know if you have any questions
+# Presentation Content
+
+You can find the presentation content [here](toolkit_deploy.pdf) in pdf form.
+
+# Useful Links and Resources
+
+- Our developer reference for [initialization and startup](https://developer.shotgunsoftware.com/tk-core/initializing.html).
+- Environment variable reference for things that control the [Toolkit Startup](https://developer.shotgunsoftware.com/tk-core/initializing.html#environment-variables).
+- [Bootstrap](https://developer.shotgunsoftware.com/tk-core/initializing.html#toolkitmanager) python API to control toolkit startup.
+- SIGGRAPH ACM Digipro 2018 talk about [Cloud-based pipeline distribution for effective and secure remote workflows](https://dl.acm.org/citation.cfm?id=3233096).
+- Descriptor [reference syntax](https://developer.shotgunsoftware.com/tk-core/descriptor.html).
