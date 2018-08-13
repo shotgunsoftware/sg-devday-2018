@@ -1,13 +1,22 @@
 
-NOTES:
-* This is your workspace. Add all materials for your section here
-* Should only be one person working here (whoever is presenting this part)
-* Please commit/push your changes to keep everyone up-to-date with what you're doing
+# Writing Your Own Toolkit App
 
-TODO:
-* Replace these notes with an overview and outline of what is covered in this part of the session. Anyone coming to these resources should be able to quickly understand what is covered in the deck/pdf/notes/docs
-* Include any links to documentation, videos, or other supporting content in this README
-* Use the outline on the internal wiki for a starting point
-* Use the keynote template in the `templates` folder of this repository to begin fleshing out your presentation 
-* When keynote deck is complete for this part, convert to PDF and add to the repo
-* Please let Josh/Manne know if you have any questions
+This session provides an overview of how to build your own Toolkit App. The included
+talk contains:
+
+* The structure of a Toolkit App
+* Using Frameworks
+* Developing and configuring the App
+
+## Contents
+
+* **writing_your_own_toolkit_app.pdf**: The full set of presentation slides, baked out as a pdf document.
+* **tk-multi-bugreporter**: The implementation of the Toolkit App that was presented in this session.
+
+## Resources
+* [Documentation: tk-framework-qtwidgets](http://developer.shotgunsoftware.com/tk-framework-qtwidgets)
+* [Documentation: tk-framework-shotgunutils](http://developer.shotgunsoftware.com/tk-framework-shotgunutils)
+* [Source Code: tk-multi-demo](https://github.com/shotgunsoftware/tk-multi-demo)
+* [Source Code: tk-multi-startup](https://github.com/shotgunsoftware/tk-multi-starterapp)
+* [Source Code: tk-framework-qtwidgets](https://github.com/shotgunsoftware/tk-framework-qtwidgets)
+* [Source Code: tk-framework-shotgunutils](https://github.com/shotgunsoftware/tk-framework-shotgunutils)
