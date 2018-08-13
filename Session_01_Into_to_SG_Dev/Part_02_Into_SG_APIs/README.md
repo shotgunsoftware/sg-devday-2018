@@ -5,8 +5,10 @@ An introduction to the various APIs that are available to Shotgun developers.
 ## Contents
 
 * **ami_demo.py**: An example web service for handling AMI executions
+
 * **example_ami_structure.py**: A Flask request object's form converted to a 
   dict to help show the AMI data structure
+  
 * **version_create_demo.py**: A python API example that:
   * Connects to a Shotgun site via script key
   * Finds entities using simple and compound filters
