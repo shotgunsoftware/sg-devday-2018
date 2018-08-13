@@ -4,6 +4,9 @@ An introduction to the various APIs that are available to Shotgun developers.
 
 ## Contents
 
+* **data_management.pdf**: The full deck for this session as presented at 
+  dev day in pdf form.
+
 * **ami_demo.py**: An example web service for handling AMI executions
 
 * **example_ami_structure.py**: A Flask request object's form converted to a 
