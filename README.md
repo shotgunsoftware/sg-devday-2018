@@ -3,7 +3,8 @@
 ## What is Shotgun Developer Day?
 A day of classes for people interested in developing custom solutions with Shotgun.
 Attendees will learn how to use Shotgun’s advanced features to automate common tasks and
-make tool development easier.
+make tool development easier. Recordings of all of the Developer Day courses can be 
+found in [this playlist](https://www.youtube.com/watch?v=QP44cM51aEY&list=PLEOzU2tEw33r4yfX7_WD7anyKrsDpQY2d).
 
 ## What is this repository?
 This repository contains all resources presented at the Shotgun Developer Day 
