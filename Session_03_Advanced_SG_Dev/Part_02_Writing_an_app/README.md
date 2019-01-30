@@ -8,6 +8,12 @@ talk contains:
 * Using Frameworks
 * Developing and configuring the App
 
+## Video recording
+
+Click on the thumbnail below to see a YouTube recording of the session.
+
+[![youtube](https://img.youtube.com/vi/bT2WlQaJVmY/0.jpg)](https://www.youtube.com/watch?v=bT2WlQaJVmY)
+
 ## Contents
 
 * **writing_your_own_toolkit_app.pdf**: The full set of presentation slides, baked out as a pdf document.
