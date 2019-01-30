@@ -18,6 +18,6 @@ talk contains:
 * [Documentation: tk-framework-qtwidgets](http://developer.shotgunsoftware.com/tk-framework-qtwidgets)
 * [Documentation: tk-framework-shotgunutils](http://developer.shotgunsoftware.com/tk-framework-shotgunutils)
 * [Source Code: tk-multi-demo](https://github.com/shotgunsoftware/tk-multi-demo)
-* [Source Code: tk-multi-startup](https://github.com/shotgunsoftware/tk-multi-starterapp)
+* [Source Code: tk-multi-starterapp](https://github.com/shotgunsoftware/tk-multi-starterapp)
 * [Source Code: tk-framework-qtwidgets](https://github.com/shotgunsoftware/tk-framework-qtwidgets)
 * [Source Code: tk-framework-shotgunutils](https://github.com/shotgunsoftware/tk-framework-shotgunutils)
